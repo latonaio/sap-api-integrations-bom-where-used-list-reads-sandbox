@@ -31,7 +31,7 @@ sap-api-integrations-bill-of-material-where-used-list-reads において、API �
 
 ### SDC レイアウト
 
-* inoutSDC.BillOfMaterialWhereUsedList.BillOfMaterialComponent（構成品目 部品表）
+* inoutSDC.BillOfMaterialWhereUsedList.BillOfMaterialComponent（構成品目）
 * inoutSDC.BillOfMaterialWhereUsedList.Material（品目）
 * inoutSDC.BillOfMaterialWhereUsedList.Plant（プラント）
 
