@@ -96,14 +96,14 @@ func (c *SAPAPICaller) AsyncGetBillOfMaterialWhereUsedList(billOfMaterialCompone
 ```
 
 ## Output  
-本マイクロサービスでは、[golang-logging-library](https://github.com/latonaio/golang-logging-library) により、以下のようなデータがJSON形式で出力されます。  
+本マイクロサービスでは、[golang-logging-library-for-sap](https://github.com/latonaio/golang-logging-library-for-sap) により、以下のようなデータがJSON形式で出力されます。  
 以下の sample.json の例は、SAP 構成品目 部品表 使用先一覧 データ が取得された結果の JSON の例です。  
-以下の項目のうち、"BillOfMaterialItemUUID" ～ "BOMVersionStatusDescription" は、/SAP_API_Output_Formatter/type.go 内 の Type WhereUsedList {} による出力結果です。"cursor" ～ "time"は、golang-logging-library による 定型フォーマットの出力結果です。  
+以下の項目のうち、"BillOfMaterialItemUUID" ～ "BOMVersionStatusDescription" は、/SAP_API_Output_Formatter/type.go 内 の Type WhereUsedList {} による出力結果です。"cursor" ～ "time"は、golang-logging-library-for-sap による 定型フォーマットの出力結果です。  
 
 ```
 {
-	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-bill-of-material-where-used-list-reads/SAP_API_Caller/caller.go#L58",
-	"function": "sap-api-integrations-bill-of-material-where-used-list-reads/SAP_API_Caller.(*SAPAPICaller).ByComponent",
+	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-bill-of-material-where-used-list-reads/SAP_API_Caller/caller.go#L89",
+	"function": "sap-api-integrations-bill-of-material-where-used-list-reads/SAP_API_Caller.(*SAPAPICaller).ByMaterial",
 	"level": "INFO",
 	"message": [
 		{
@@ -119,9 +119,35 @@ func (c *SAPAPICaller) AsyncGetBillOfMaterialWhereUsedList(billOfMaterialCompone
 			"BillOfMaterialItemUnit": "PC",
 			"BillOfMaterialItemQuantity": "100",
 			"EngineeringChangeDocument": "",
-			"ValidityStartDate": "/Date(1136073600000)/",
-			"ValidityEndDate": "/Date(253402214400000)/",
+			"ValidityStartDate": "2006-01-01T09:00:00+09:00",
+			"ValidityEndDate": "9999-12-31T09:00:00+09:00",
 			"BillOfMaterialItemNodeNumber": "1",
+			"BOMItemDescription": "",
+			"Material": "SG23",
+			"MaterialName": "SEMI23,PD,Subcontracting",
+			"PlantName": "Plant 1 DE",
+			"BillOfMaterialVariantUsageDesc": "Production",
+			"Plant": "1010",
+			"BillOfMaterialVariantUsage": "1",
+			"BOMVersionStatus": "",
+			"BOMVersionStatusDescription": ""
+		},
+		{
+			"BillOfMaterialItemUUID": "00163e19-8846-1ed6-8ebf-60ab800583e4",
+			"BillOfMaterialComponent": "RM14",
+			"BillOfMaterialItemNumber": "0020",
+			"HeaderChangeDocument": "",
+			"BillOfMaterialCategory": "M",
+			"BillOfMaterial": "00000001",
+			"BillOfMaterialVariant": "1",
+			"BillOfMaterialVersion": "",
+			"BillOfMaterialItemCategory": "L",
+			"BillOfMaterialItemUnit": "PC",
+			"BillOfMaterialItemQuantity": "100",
+			"EngineeringChangeDocument": "",
+			"ValidityStartDate": "2006-01-01T09:00:00+09:00",
+			"ValidityEndDate": "9999-12-31T09:00:00+09:00",
+			"BillOfMaterialItemNodeNumber": "2",
 			"BOMItemDescription": "",
 			"Material": "SG23",
 			"MaterialName": "SEMI23,PD,Subcontracting",
@@ -145,8 +171,8 @@ func (c *SAPAPICaller) AsyncGetBillOfMaterialWhereUsedList(billOfMaterialCompone
 			"BillOfMaterialItemUnit": "PC",
 			"BillOfMaterialItemQuantity": "100",
 			"EngineeringChangeDocument": "",
-			"ValidityStartDate": "/Date(1136073600000)/",
-			"ValidityEndDate": "/Date(253402214400000)/",
+			"ValidityStartDate": "2006-01-01T09:00:00+09:00",
+			"ValidityEndDate": "9999-12-31T09:00:00+09:00",
 			"BillOfMaterialItemNodeNumber": "3",
 			"BOMItemDescription": "",
 			"Material": "SG23",
@@ -157,34 +183,8 @@ func (c *SAPAPICaller) AsyncGetBillOfMaterialWhereUsedList(billOfMaterialCompone
 			"BillOfMaterialVariantUsage": "1",
 			"BOMVersionStatus": "",
 			"BOMVersionStatusDescription": ""
-		},
-		{
-			"BillOfMaterialItemUUID": "00163e37-bedf-1ee8-8386-66a98cf31c4a",
-			"BillOfMaterialComponent": "RM13",
-			"BillOfMaterialItemNumber": "0010",
-			"HeaderChangeDocument": "",
-			"BillOfMaterialCategory": "M",
-			"BillOfMaterial": "00000199",
-			"BillOfMaterialVariant": "1",
-			"BillOfMaterialVersion": "",
-			"BillOfMaterialItemCategory": "L",
-			"BillOfMaterialItemUnit": "PC",
-			"BillOfMaterialItemQuantity": "100",
-			"EngineeringChangeDocument": "",
-			"ValidityStartDate": "/Date(1136073600000)/",
-			"ValidityEndDate": "/Date(253402214400000)/",
-			"BillOfMaterialItemNodeNumber": "1",
-			"BOMItemDescription": "",
-			"Material": "SG26",
-			"MaterialName": "SEMI26,PD,Subcontracting",
-			"PlantName": "Plant 1 DE",
-			"BillOfMaterialVariantUsageDesc": "Production",
-			"Plant": "1010",
-			"BillOfMaterialVariantUsage": "1",
-			"BOMVersionStatus": "",
-			"BOMVersionStatusDescription": ""
 		}
 	],
-	"time": "2022-01-01T15:54:31.732979+09:00"
+	"time": "2022-01-28T12:44:17+09:00"
 }
 ```
