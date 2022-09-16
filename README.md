@@ -1,11 +1,11 @@
-# sap-api-integrations-bill-of-material-where-used-list-reads  
-sap-api-integrations-bill-of-material-where-used-list-reads は、外部システム(特にエッジコンピューティング環境)をSAPと統合することを目的に、SAP API で 構成品目 部品表 使用先一覧 データを取得するマイクロサービスです。  
-sap-api-integrations-bill-of-material-where-used-list-reads には、サンプルのAPI Json フォーマットが含まれています。  
-sap-api-integrations-bill-of-material-where-used-list-reads は、オンプレミス版である（＝クラウド版ではない）SAPS4HANA API の利用を前提としています。クラウド版APIを利用する場合は、ご注意ください。  
+# sap-api-integrations-bom-where-used-list-reads-sandbox  
+sap-api-integrations-bom-where-used-list-reads-sandbox は、外部システム(特にエッジコンピューティング環境)をSAPと統合することを目的に、SAP API で 構成品目 部品表 使用先一覧 データを取得するマイクロサービスです。  
+sap-api-integrations-bom-where-used-list-reads-sandbox には、サンプルのAPI Json フォーマットが含まれています。  
+sap-api-integrations-bom-where-used-list-reads-sandbox は、オンプレミス版である（＝クラウド版ではない）SAPS4HANA API の利用を前提としています。クラウド版APIを利用する場合は、ご注意ください。  
 https://api.sap.com/api/OP_API_BOM_WHERE_USED_SRV/overview   
 
 ## 動作環境
-sap-api-integrations-bill-of-material-where-used-list-reads は、主にエッジコンピューティング環境における動作にフォーカスしています。   
+sap-api-integrations-bom-where-used-list-reads-sandbox は、主にエッジコンピューティング環境における動作にフォーカスしています。   
 使用する際は、事前に下記の通り エッジコンピューティングの動作環境（推奨/必須）を用意してください。   
 ・ エッジ Kubernetes （推奨）    
 ・ AION のリソース （推奨)    
@@ -13,21 +13,21 @@ sap-api-integrations-bill-of-material-where-used-list-reads は、主にエッ�
 ・ CPU: ARM/AMD/Intel（いずれか必須） 
 
 ## クラウド環境での利用  
-sap-api-integrations-bill-of-material-where-used-list-reads は、外部システムがクラウド環境である場合にSAPと統合するときにおいても、利用可能なように設計されています。  
+sap-api-integrations-bom-where-used-list-reads-sandbox は、外部システムがクラウド環境である場合にSAPと統合するときにおいても、利用可能なように設計されています。  
 
 ## 本レポジトリ が 対応する API サービス
-sap-api-integrations-bill-of-material-where-used-list-reads が対応する APIサービス は、次のものです。
+sap-api-integrations-bom-where-used-list-reads-sandbox が対応する APIサービス は、次のものです。
 
 * APIサービス概要説明 URL: https://api.sap.com/api/OP_API_BOM_WHERE_USED_SRV/overview   
 * APIサービス名(=baseURL): API_BOM_WHERE_USED_SRV
 
 ## 本レポジトリ に 含まれる API名
-sap-api-integrations-bill-of-material-where-used-list-reads には、次の API をコールするためのリソースが含まれています。  
+sap-api-integrations-bom-where-used-list-reads-sandbox には、次の API をコールするためのリソースが含まれています。  
 
 * A_BOMWhereUsed（構成品目 部品表 使用先一覧データ）
 
 ## API への 値入力条件 の 初期値
-sap-api-integrations-bill-of-material-where-used-list-reads において、API への値入力条件の初期値は、入力ファイルレイアウトの種別毎に、次の通りとなっています。  
+sap-api-integrations-bom-where-used-list-reads-sandbox において、API への値入力条件の初期値は、入力ファイルレイアウトの種別毎に、次の通りとなっています。  
 
 ### SDC レイアウト
 
@@ -102,8 +102,8 @@ func (c *SAPAPICaller) AsyncGetBillOfMaterialWhereUsedList(billOfMaterialCompone
 
 ```
 {
-	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-bill-of-material-where-used-list-reads/SAP_API_Caller/caller.go#L89",
-	"function": "sap-api-integrations-bill-of-material-where-used-list-reads/SAP_API_Caller.(*SAPAPICaller).ByMaterial",
+	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-bom-where-used-list-reads-sandbox/SAP_API_Caller/caller.go#L89",
+	"function": "sap-api-integrations-bom-where-used-list-reads-sandbox/SAP_API_Caller.(*SAPAPICaller).ByMaterial",
 	"level": "INFO",
 	"message": [
 		{

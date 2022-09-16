@@ -3,7 +3,7 @@
 PUSH=$1
 DATE="$(date "+%Y%m%d%H%M")"
 REPOSITORY_PREFIX="latonaio"
-SERVICE_NAME="sap-api-integrations-bill-of-material-where-used-list-reads"
+SERVICE_NAME="sap-api-integrations-bom-where-used-list-reads-sandbox"
 
 DOCKER_BUILDKIT=1 docker build --progress=plain -t ${SERVICE_NAME}:"${DATE}" . --no-cache
 

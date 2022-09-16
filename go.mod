@@ -1,4 +1,4 @@
-module sap-api-integrations-bill-of-material-where-used-list-reads
+module sap-api-integrations-bom-where-used-list-reads-sandbox
 
 go 1.18
 

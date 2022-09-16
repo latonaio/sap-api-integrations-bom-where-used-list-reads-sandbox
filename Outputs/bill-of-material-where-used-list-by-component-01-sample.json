@@ -1,6 +1,6 @@
 {
-	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-bill-of-material-where-used-list-reads/SAP_API_Caller/caller.go#L89",
-	"function": "sap-api-integrations-bill-of-material-where-used-list-reads/SAP_API_Caller.(*SAPAPICaller).ByMaterial",
+	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-bom-where-used-list-reads-sandbox/SAP_API_Caller/caller.go#L89",
+	"function": "sap-api-integrations-bom-where-used-list-reads-sandbox/SAP_API_Caller.(*SAPAPICaller).ByMaterial",
 	"level": "INFO",
 	"message": [
 		{
