@@ -2,7 +2,7 @@ package sap_api_output_formatter
 
 import (
 	"encoding/json"
-	"sap-api-integrations-bom-where-used-list-reads-sandbox/SAP_API_Caller/responses"
+	"sap-api-integrations-bom-where-used-list-reads/SAP_API_Caller/responses"
 
 	"github.com/latonaio/golang-logging-library-for-sap/logger"
 	"golang.org/x/xerrors"

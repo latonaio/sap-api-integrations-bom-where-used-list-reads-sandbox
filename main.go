@@ -1,8 +1,8 @@
 package main
 
 import (
-	sap_api_caller "sap-api-integrations-bom-where-used-list-reads-sandbox/SAP_API_Caller"
-	sap_api_input_reader "sap-api-integrations-bom-where-used-list-reads-sandbox/SAP_API_Input_Reader"
+	sap_api_caller "sap-api-integrations-bom-where-used-list-reads/SAP_API_Caller"
+	sap_api_input_reader "sap-api-integrations-bom-where-used-list-reads/SAP_API_Input_Reader"
 
 	"github.com/latonaio/golang-logging-library-for-sap/logger"
 )

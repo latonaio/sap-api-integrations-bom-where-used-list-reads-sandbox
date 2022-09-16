@@ -1,4 +1,4 @@
-module sap-api-integrations-bom-where-used-list-reads-sandbox
+module sap-api-integrations-bom-where-used-list-reads
 
 go 1.18
 

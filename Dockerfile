@@ -12,16 +12,16 @@ RUN go mod download
 
 COPY . .
 
-RUN go build -o sap-api-integrations-bom-where-used-list-reads-sandbox
+RUN go build -o sap-api-integrations-bom-where-used-list-reads
 
 # Runtime Container
 FROM alpine:3.14
 RUN apk add --no-cache libc6-compat
-ENV SERVICE=sap-api-integrations-bom-where-used-list-reads-sandbox \
+ENV SERVICE=sap-api-integrations-bom-where-used-list-reads \
     APP_DIR="${AION_HOME}/${POSITION}/${SERVICE}"
 
 WORKDIR ${AION_HOME}
 
-COPY --from=builder /go/src/github.com/latonaio/sap-api-integrations-bom-where-used-list-reads-sandbox .
+COPY --from=builder /go/src/github.com/latonaio/sap-api-integrations-bom-where-used-list-reads .
 
-CMD ["./sap-api-integrations-bom-where-used-list-reads-sandbox"]
+CMD ["./sap-api-integrations-bom-where-used-list-reads"]

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"net/http"
-	sap_api_output_formatter "sap-api-integrations-bom-where-used-list-reads-sandbox/SAP_API_Output_Formatter"
+	sap_api_output_formatter "sap-api-integrations-bom-where-used-list-reads/SAP_API_Output_Formatter"
 	"strings"
 	"sync"
 
